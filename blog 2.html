@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Story: Korapsyon</title>
+
+  <style>
+    /* CUSTOM CSS - NO FRAMEWORKS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f5dc, #e7d8c9, #d7ccc8);
+      padding: 40px 20px;
+      color: #3e2723;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* NAVIGATION */
+    .btn-home {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #5d4037;
+      color: #f5f5dc;
+      border: 2px solid #5d4037;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .btn-home:hover {
+      background-color: #f5f5dc;
+      color: #5d4037;
+    }
+
+    /* HEADER SECTION */
+    .header {
+      background: linear-gradient(to right, #4e342e, #5d4037);
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .header h1 {
+      color: #f5f5dc;
+      font-size: 28px;
+      line-height: 1.4;
+    }
+
+    /* BLOG CARDS */
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .card p {
+      text-align: justify;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    /* RESPONSIVE GRID LAYOUT */
+    .gallery {
+      display: grid;
+      /* Responsive: creates columns based on available width */
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 10px;
+      border: 2px solid #5d4037;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+
+    /* CLICKABLE IMAGE BOX */
+    .gallery-item a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .footer {
+      text-align: center;
+      color: #3e2723;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <a href="index.html" class="btn-home">← Back to Home</a>
+
+  <div class="header">
+    <h1>Nakasanayan na Ba? Korapsyon sa Araw-araw na Buhay: Hanggang Kailan Magtitiis ang Pilipino?</h1>
+  </div>
+
+  <div class="card">
+    <p>
+      <strong>I.</strong> Bilang isang estudyante at karaniwang mamamayan, hindi ko maiwasang mapansin kung gaano na kadalas banggitin ang salitang <strong>korapsyon</strong> sa ating bansa, lalo na nitong mga nakakaraang mga buwan tulad ng <strong>flood control issue</strong> na maraming Pilipino ang nagalit at nagprotesta. Paulit-ulit na lang ang kwento: may <strong>nahuling opisyal</strong>, may <strong>pondong nawala</strong>, may <strong>pangakong napako</strong>. Napapaisip ako: nasanay na ba tayo sa ilang dekada na tayong ganito o sadyang wala na lang tayong magawa? Pipiliin kong maniwala na <strong>may pag-asa pa</strong>—kung handa tayong <strong>kumilos, kahit paunti-unti</strong>.
+    </p>
+  </div>
+
+  <div class="card">
+    <p>
+      <strong>II.</strong> It's very sad to say na <strong>ilang dekada na tayong nagtitiis</strong> sa ganitong pamamahala ng gobyerno. Ako bilang estudyante na gumagamit ng mga <strong>pampublikong transportasyon</strong>, hindi ko maiwasang na madismaya dahil <strong>sobrang traffic araw-araw</strong> at walang nagagawang solusyon ang ating pamahalaan; puro <strong>matatamis na salita</strong> lang tuwing eleksyon. Nitong mga nakaraang buwan, palagay ko mismong kalikasan na ang nagbunyag kung gaano ka-kurap ang ating sistema lalo na sa <strong>flood control budget na trillions</strong> pero puro <strong>ghost project</strong> ang kinalabasan. Bakit hanggang ngayon puro mga <strong>"Contractor lang ang nakukulong"</strong>? Bakit walang mga <strong>pulitikong nakukulong</strong> at bakit parang <strong>walang pake ang administrasyon</strong> sa napakalaking perang nawala?
+    </p>
+  </div>
+
+  <div class="card">
+    <p>
+      <strong>III.</strong> Sa huli, tayo pa ring <strong>normal na mamamayan ang kawawa</strong>, habang ang mga nakaupo ay may <strong>VIP treatment</strong>. Sabi nga ni Mayor Magalong, kaya malakas ang loob nilang kumurakot kasi <strong>laging tahimik lang ang mga Pilipino</strong>. Ang pagbabago ay nagsisimula kapag pinili nating <strong>hindi manahimik</strong>. Kahit estudyante pa lang ako, naniniwala akong may magagawa tayo sa pamamagitan ng pagiging <strong>mulat at mapanuri</strong> sa mga isyu, huwag masanay sa maling sistema, at manindigan kahit estudyante pa lamang.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size: 20px; color: #4e342e; margin-bottom: 15px; border-left: 5px solid #8d6e63; padding-left: 10px;">Evidence Gallery</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <a href="korapsyonpics/korapsyonpic1.jpg" target="_blank">
+          <img src="korapsyonpics/korapsyonpic1.jpg" alt="Korapsyon Image 1">
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="korapsyonpics/korapsyonpic2.jpg" target="_blank">
+          <img src="korapsyonpics/korapsyonpic2.jpg" alt="Korapsyon Image 2">
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="korapsyonpics/korapsyonpic3.jpg" target="_blank">
+          <img src="korapsyonpics/korapsyonpic3.jpg" alt="Korapsyon Image 3">
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="korapsyonpics/korapsyonpic4.jpg" target="_blank">
+          <img src="korapsyonpics/korapsyonpic4.jpg" alt="Korapsyon Image 4">
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="korapsyonpics/korapsyonpic5.jpg" target="_blank">
+          <img src="korapsyonpics/korapsyonpic5.jpg" alt="Korapsyon Image 5">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Created by <strong>Kimi Bayran ITAD</strong>
+  </div>
+
+</div>
+
+</body>
+</html>

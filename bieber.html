@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Bieber | My Beats</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream-bg: #FFF8F0; 
+            --dark-espresso: #1a0f0a; 
+            --deep-brown: #2D1B14;
+            --accent-tan: #D7CCC8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--cream-bg);
+            color: var(--dark-espresso);
+            font-family: 'Poppins', sans-serif;
+            padding-bottom: 80px;
+        }
+
+        header { text-align: center; padding: 60px 20px 40px 20px; max-width: 800px; margin: 0 auto; }
+        
+        h1 { font-family: 'Cinzel', serif; font-size: 3.5rem; text-transform: uppercase; }
+        .artist-sub { letter-spacing: 4px; color: var(--deep-brown); font-size: 0.9rem; margin-top: 10px; font-weight: 600; }
+
+        .artist-bio { 
+            margin-top: 20px; 
+            font-size: 1rem; 
+            line-height: 1.6; 
+            color: #444;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .song-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .song-card {
+            background: white;
+            border: 2px solid var(--dark-espresso);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+
+        .song-card:hover {
+            background-color: #fffcf8;
+            box-shadow: 10px 10px 0px var(--accent-tan);
+        }
+
+        .album-header {
+            display: flex;
+            flex-direction: column; 
+            gap: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .album-art {
+            width: 100%; 
+            height: 450px; 
+            border: 1px solid var(--dark-espresso);
+            object-fit: cover; 
+            background-color: var(--accent-tan);
+        }
+
+        .info h3 { font-family: 'Cinzel', serif; font-size: 1.5rem; line-height: 1.2; }
+        .info p { font-size: 0.9rem; color: var(--deep-brown); font-style: italic; margin-top: 5px; }
+
+        audio {
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+            filter: sepia(20%) saturate(70%) grayscale(100%) contrast(90%) invert(100%);
+        }
+
+        .song-desc {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #444;
+            margin-top: 10px;
+            flex-grow: 1; 
+        }
+
+        .footer-nav { text-align: center; margin-top: 80px; }
+        .btn {
+            text-decoration: none;
+            color: var(--cream-bg);
+            background: var(--dark-espresso);
+            padding: 20px 50px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 3px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid var(--dark-espresso);
+        }
+
+        .btn:hover { 
+            background: transparent;
+            color: var(--dark-espresso);
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .album-art { height: 400px; } 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Justin Bieber</h1>
+        <p class="artist-sub">The Icon of Modern Pop</p>
+        <p class="artist-bio">
+            Justin Bieber rose to global stardom as a teenage sensation and has since evolved into one of the best-selling music artists of all time.
+        </p>
+    </header>
+
+    <main class="container">
+        <div class="song-grid">
+            
+            <div class="song-card">
+                <div class="album-header">
+                    <img src="./justinpics/sorrypic.jpg" class="album-art" alt="Sorry">
+                    <div class="info">
+                        <h3>Sorry</h3>
+                        <p>Album: Purpose (2015)</p>
+                    </div>
+                </div>
+                <p class="song-desc">A tropical house-infused pop song that dominated global charts and showed a more mature side of Justin's music.</p>
+                <audio controls>
+                    <source src="./sorry.mp4" type="audio/mp4">
+                    <source src="./sorry.mp4" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="song-card">
+                <div class="album-header">
+                    <img src="./justinpics/loveyours.jpg" class="album-art" alt="Love Yourself">
+                    <div class="info">
+                        <h3>Love Yourself</h3>
+                        <p>Album: Purpose (2015)</p>
+                    </div>
+                </div>
+                <p class="song-desc">An acoustic pop ballad with a cheeky lyrical bite, showcasing Justin's smooth vocal range.</p>
+                <audio controls>
+                    <source src="./loveyourself.mp4" type="audio/mp4">
+                    <source src="./loveyourself.mp4" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="song-card">
+                <div class="album-header">
+                    <img src="./justinpics/eenie.jpg" class="album-art" alt="Eenie Meenie">
+                    <div class="info">
+                        <h3>Eenie Meenie</h3>
+                        <p>Justin Bieber & Sean Kingston (2010)</p>
+                    </div>
+                </div>
+                <p class="song-desc">A fun, nostalgic collaboration that perfectly captured the high-energy pop-R&B sound of the early 2010s.</p>
+                <audio controls>
+                    <source src="./eenie.mp4" type="audio/mp4">
+                    <source src="./eenie.mp4" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="song-card">
+                <div class="album-header">
+                    <img src="./justinpics/baby.jpg" class="album-art" alt="Baby">
+                    <div class="info">
+                        <h3>Baby</h3>
+                        <p>Album: My World 2.0 (2010)</p>
+                    </div>
+                </div>
+                <p class="song-desc">The breakout global smash hit that defined an era of pop and became a cultural phenomenon.</p>
+                <audio controls>
+                    <source src="./baby.mp4" type="audio/mp4">
+                    <source src="./baby.mp4" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="song-card">
+                <div class="album-header">
+                    <img src="./justinpics/onetime.jpg" class="album-art" alt="One Time">
+                    <div class="info">
+                        <h3>One Time</h3>
+                        <p>Album: My World (2009)</p>
+                    </div>
+                </div>
+                <p class="song-desc">Bieber's debut single that introduced his signature R&B-tinged pop sound to the world.</p>
+                <audio controls>
+                    <source src="./onetime.mp4" type="audio/mp4">
+                    <source src="./onetime.mp4" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="song-card">
+                <div class="album-header">
+                    <img src="./justinpics/oneless.jpg" class="album-art" alt="One Less Lonely Girl">
+                    <div class="info">
+                        <h3>One Less Lonely Girl</h3>
+                        <p>Album: My World (2009)</p>
+                    </div>
+                </div>
+                <p class="song-desc">A fan-favorite mid-tempo track known for its catchy melody and romantic lyrics.</p>
+                <audio controls>
+                    <source src="./onelesslonelygirl.mp4" type="audio/mp4">
+                    <source src="./onelesslonelygirl.mp4" type="audio/mpeg">
+                </audio>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="footer-nav">
+        <a href="index3.html" class="btn">Back to Beats</a>
+    </div>
+
+</body>
+</html>
