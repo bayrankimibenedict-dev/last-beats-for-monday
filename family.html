@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family | Kimi Bayran Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream-bg: #FFF8F0; 
+            --dark-espresso: #2D1B14;
+            --deep-brown: #5D4037;
+            --accent-tan: #D7CCC8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--cream-bg);
+            color: var(--dark-espresso);
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            padding-bottom: 100px;
+        }
+
+        /* --- NAVIGATION --- */
+        .nav-bar {
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .back-home-link {
+            text-decoration: none;
+            color: var(--dark-espresso);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            border-bottom: 2px solid var(--dark-espresso);
+        }
+
+        /* --- HEADER --- */
+        header {
+            text-align: center;
+            padding: 20px 20px 60px 20px;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .personal-desc {
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: var(--deep-brown);
+            font-style: italic;
+            border-left: 4px solid var(--dark-espresso);
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        /* --- PHOTO GRID --- */
+        .photo-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .photo-card {
+            background: #fff;
+            border: 2px solid var(--dark-espresso);
+            padding: 12px;
+            box-shadow: 8px 8px 0px var(--dark-espresso);
+            transition: all 0.3s ease;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 12px 12px 0px var(--deep-brown);
+        }
+
+        .img-container {
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            background-color: #eee;
+            cursor: zoom-in;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+            display: block;
+        }
+
+        .photo-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* --- BUTTONS --- */
+        .detail-link {
+            text-decoration: none;
+            color: var(--dark-espresso);
+            font-weight: bold;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            border: 2px solid var(--dark-espresso);
+            padding: 5px 12px;
+            transition: 0.3s;
+        }
+
+        .detail-link:hover {
+            background: var(--dark-espresso);
+            color: var(--cream-bg);
+        }
+
+        .footer-nav {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .gallery-return-btn {
+            text-decoration: none;
+            color: var(--cream-bg);
+            background-color: var(--dark-espresso);
+            padding: 18px 50px;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            display: inline-block;
+            border: 2px solid var(--dark-espresso);
+            box-shadow: 10px 10px 0px var(--accent-tan);
+            transition: all 0.3s ease;
+        }
+
+        #goTop {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--dark-espresso);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: bold;
+            z-index: 100;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .gallery-return-btn { width: 90%; padding: 15px; }
+        }
+    </style>
+</head>
+<body id="top">
+
+    <nav class="nav-bar">
+        <a href="index.html" class="back-home-link">← Home</a>
+    </nav>
+
+    <header>
+        <h1>Family</h1>
+        <p class="personal-desc">
+            These are the people who have been my greatest support system throughout my life. 
+            Every photo represents a cherished memory and the unbreakable bond we share.
+        </p>
+    </header>
+
+    <main class="photo-grid">
+        <div class="photo-card">
+            <a href="fampics/fampic1.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic1.jpg" alt="Family 1"></div></a>
+            <div class="card-footer"><span>FAM_01</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic2.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic2.jpg" alt="Family 2"></div></a>
+            <div class="card-footer"><span>FAM_02</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic3.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic3.jpg" alt="Family 3"></div></a>
+            <div class="card-footer"><span>FAM_03</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic4.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic4.jpg" alt="Family 4"></div></a>
+            <div class="card-footer"><span>FAM_04</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic5.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic5.jpg" alt="Family 5"></div></a>
+            <div class="card-footer"><span>FAM_05</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic6.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic6.jpg" alt="Family 6"></div></a>
+            <div class="card-footer"><span>FAM_06</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic7.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic7.jpg" alt="Family 7"></div></a>
+            <div class="card-footer"><span>FAM_07</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic8.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic8.jpg" alt="Family 8"></div></a>
+            <div class="card-footer"><span>FAM_08</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic9.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic9.jpg" alt="Family 9"></div></a>
+            <div class="card-footer"><span>FAM_09</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic10.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic10.jpg" alt="Family 10"></div></a>
+            <div class="card-footer"><span>FAM_10</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic11.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic11.jpg" alt="Family 11"></div></a>
+            <div class="card-footer"><span>FAM_11</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic12.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic12.jpg" alt="Family 12"></div></a>
+            <div class="card-footer"><span>FAM_12</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic13.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic13.jpg" alt="Family 13"></div></a>
+            <div class="card-footer"><span>FAM_13</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic14.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic14.jpg" alt="Family 14"></div></a>
+            <div class="card-footer"><span>FAM_14</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic15.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic15.jpg" alt="Family 15"></div></a>
+            <div class="card-footer"><span>FAM_15</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic16.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic16.jpg" alt="Family 16"></div></a>
+            <div class="card-footer"><span>FAM_16</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic17.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic17.jpg" alt="Family 17"></div></a>
+            <div class="card-footer"><span>FAM_17</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic18.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic18.jpg" alt="Family 18"></div></a>
+            <div class="card-footer"><span>FAM_18</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic19.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic19.jpg" alt="Family 19"></div></a>
+            <div class="card-footer"><span>FAM_19</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic20.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic20.jpg" alt="Family 20"></div></a>
+            <div class="card-footer"><span>FAM_20</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic21.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic21.jpg" alt="Family 21"></div></a>
+            <div class="card-footer"><span>FAM_21</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic22.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic22.jpg" alt="Family 22"></div></a>
+            <div class="card-footer"><span>FAM_22</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic23.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic23.jpg" alt="Family 23"></div></a>
+            <div class="card-footer"><span>FAM_23</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic24.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic24.jpg" alt="Family 24"></div></a>
+            <div class="card-footer"><span>FAM_24</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic25.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic25.jpg" alt="Family 25"></div></a>
+            <div class="card-footer"><span>FAM_25</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic26.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic26.jpg" alt="Family 26"></div></a>
+            <div class="card-footer"><span>FAM_26</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic27.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic27.jpg" alt="Family 27"></div></a>
+            <div class="card-footer"><span>FAM_27</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic28.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic28.jpg" alt="Family 28"></div></a>
+            <div class="card-footer"><span>FAM_28</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic29.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic29.jpg" alt="Family 29"></div></a>
+            <div class="card-footer"><span>FAM_29</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+        <div class="photo-card">
+            <a href="fampics/fampic30.jpg" target="_blank"><div class="img-container"><img src="fampics/fampic30.jpg" alt="Family 30"></div></a>
+            <div class="card-footer"><span>FAM_30</span><a href="biography.html" class="detail-link">Story</a></div>
+        </div>
+    </main>
+
+    <div class="footer-nav">
+        <a href="index2.html" class="gallery-return-btn">Back to Photo Gallery</a>
+    </div>
+
+    <a href="#top" id="goTop">UP</a>
+
+</body>
+</html>
